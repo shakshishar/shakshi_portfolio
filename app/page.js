@@ -70,11 +70,11 @@ export default function Home() {
               <AnimatedText />
             </div>
 
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-400 opacity-0 animate-fade-in-up stagger-3 sm:text-lg">
+            <p className="mt-5 max-w-2xl text-md leading-relaxed text-zinc-400 opacity-0 animate-fade-in-up stagger-3">
               {heroDescription}
             </p>
 
-            <div className="mt-4 flex flex-wrap gap-2 opacity-0 animate-fade-in-up stagger-3">
+            <div className="mt-12 flex flex-wrap gap-2 opacity-0 animate-fade-in-up stagger-3">
               {heroTags.map((tag) => (
                 <span
                   key={tag.label}
@@ -119,7 +119,7 @@ export default function Home() {
             <SectionHeading subtitle="My story">
               About Me
             </SectionHeading>
-            <div className="space-y-4 text-base leading-relaxed text-zinc-400">
+            <div className="space-y-4 text-md leading-relaxed text-zinc-400">
               {aboutParagraphs.map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}
@@ -127,7 +127,7 @@ export default function Home() {
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl border border-violet-500/20 bg-violet-500/5 p-5">
-                <h3 className="text-sm font-semibold text-violet-300">Education</h3>
+                <h3 className="text-md font-semibold text-violet-300">Education</h3>
                 <ul className="mt-3 space-y-3">
                   {education.map((item) => (
                     <li key={item.degree}>
@@ -140,14 +140,14 @@ export default function Home() {
                 </ul>
               </div>
               <div className="rounded-xl border border-cyan-500/20 bg-cyan-500/5 p-5">
-                <h3 className="text-sm font-semibold text-cyan-300">
+                <h3 className="text-md font-semibold text-cyan-300">
                   Certifications & Training
                 </h3>
                 <p className="mt-3 text-sm font-medium text-zinc-300">{certification.title}</p>
-                <p className="text-xs text-zinc-500">Completed: {certification.completed}</p>
+                <p className="text-sm text-zinc-500">Completed: {certification.completed}</p>
                 <ul className="mt-3 space-y-1">
                   {certification.topics.map((topic) => (
-                    <li key={topic} className="flex items-center gap-2 text-xs text-zinc-400">
+                    <li key={topic} className="flex items-center gap-2 text-sm text-zinc-400">
                       <span className="size-1 rounded-full bg-cyan-500" />
                       {topic}
                     </li>
