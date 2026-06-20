@@ -4,6 +4,7 @@ export const personal = {
   email: "sakshisharma1495@gmail.com",
   linkedin: "https://linkedin.com/in/shakshi-sharma-b2797213b",
   location: "Haryana, India",
+  profileImage: "/profile.jpeg",
   tagline:
     "Full Stack Developer with experience in multi-tenant applications, AdTech integrations, and scalable web platforms.",
 };
@@ -55,6 +56,7 @@ export const experience = {
   highlights: [
     "Developed and maintained web applications using Next.js, JavaScript, and MongoDB.",
     "Worked on multi-domain platforms supporting 80+ domains and multiple subdomains with tenant-specific configurations.",
+    "Built domain approval UI and configuration flows where layouts, themes, and features are reviewed before going live per tenant.",
     "Built and maintained QuizTwiz — a multi-tenant quiz platform with domain-specific layouts and integrated ad placements.",
     "Implemented dynamic layouts and features that varied based on domain and subdomain requirements.",
     "Developed and maintained REST APIs for data retrieval and configuration management.",
@@ -109,18 +111,28 @@ export const projects = [
     gradient: "from-amber-500/50 via-orange-600/40 to-zinc-950",
     accent: "border-amber-500/30 hover:border-amber-400/50",
     categoryColor: "text-amber-400",
-    images: [], // e.g. ["/projects/quiztwiz-1.png", "/projects/quiztwiz-2.png"]
+    images: ["/quiztwiz1.PNG"],
   },
   {
     title: "Multi-tenant Platform",
-    category: "NEXT.JS",
+    category: "80+ DOMAINS · NEXT.JS",
     description:
-      "Worked on a multi-tenant platform supporting 80+ domains and multiple subdomains. Implemented dynamic layouts, client-specific configurations, and domain-based rendering logic using Next.js.",
-    tech: "Next.js",
+      "Worked on a multi-tenant platform supporting 80+ domains and multiple subdomains. Built approval UI for domain configurations and implemented dynamic layouts, client-specific themes, and domain-based rendering logic — each subdomain gets its own unique UI.",
+    tech: "Next.js | Multi-tenant Config | Approval UI",
     gradient: "from-violet-600/50 via-indigo-700/40 to-zinc-950",
     accent: "border-violet-500/30 hover:border-violet-400/50",
     categoryColor: "text-violet-400",
-    images: [],
+    galleryLayout: "vertical",
+    images: [
+      "/favanime.png",
+      "/flavonest.png",
+      "/mindcircuet.png",
+      "/cinedeets.png",
+      "/theshadowdiaries.png",
+      "/themagicbeyound.png",
+      "/seasonsandthoughts.png",
+      "/brainotmy.png",
+    ],
   },
   {
     title: "AdTech Solutions",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { navItems, personal } from "../data/portfolio";
 
 const activeColors = {
@@ -90,8 +91,15 @@ export default function Sidebar() {
   const sidebarContent = (
     <>
       <div className="flex items-center gap-3 px-2">
-        <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-500 text-sm font-bold text-white ring-2 ring-violet-500/30">
-          SS
+        <div className="relative size-10 shrink-0 overflow-hidden rounded-full ring-2 ring-violet-500/40">
+          <Image
+            src={personal.profileImage}
+            alt={personal.name}
+            fill
+            className="object-cover object-top"
+            sizes="40px"
+            priority
+          />
         </div>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold text-white">{personal.name}</p>
@@ -153,8 +161,14 @@ export default function Sidebar() {
     <>
       <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between border-b border-violet-500/10 bg-zinc-950/90 px-4 py-3 backdrop-blur-md lg:hidden">
         <div className="flex items-center gap-3">
-          <div className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-cyan-500 text-xs font-bold text-white">
-            SS
+          <div className="relative size-8 overflow-hidden rounded-full ring-2 ring-violet-500/30">
+            <Image
+              src={personal.profileImage}
+              alt={personal.name}
+              fill
+              className="object-cover object-top"
+              sizes="32px"
+            />
           </div>
           <span className="text-sm font-semibold">{personal.name}</span>
         </div>

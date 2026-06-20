@@ -214,6 +214,7 @@ export default function Home() {
                     title={project.title}
                     images={project.images}
                     gradient={project.gradient}
+                    layout={project.galleryLayout}
                   />
                   <div className="flex flex-col gap-2 p-4 sm:flex-row sm:items-start sm:justify-between">
                     <div className="flex-1">

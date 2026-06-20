@@ -39,7 +39,7 @@ export default function AnimatedText() {
           {animatedPhrases[index]}
         </span>
       </span>
-      .
+      
     </p>
   );
 }
